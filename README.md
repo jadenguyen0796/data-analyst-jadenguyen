@@ -17,6 +17,7 @@ This repository documents the **City of Vancouver Data Analytics Platform (DAP)*
 The project used anonymized datasets comprising:
 - Water permit applications and approvals.
 - Historical data on compliance and usage patterns.
+
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/71919627-7e36-48cd-84f3-a6441eeb5318" />
 
 
@@ -38,9 +39,11 @@ The project used anonymized datasets comprising:
 
 ### Deliverables for Part 1
 - **Data Pipeline Diagrams**: Detailed flowcharts created using Draw.io to visualize pipeline architecture.
+
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/76698ba0-29d9-4242-a57b-5a3edc5687d9" />
 
 - **Descriptive Analytics Report**: Summary of dataset transformations and quality improvements.
+
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/f70c32a1-35b9-429e-94c7-d945a9428202" />
 
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/71d40e3f-7ac0-47aa-b661-f7f4b76b8f11" />
@@ -56,6 +59,7 @@ Expand and evaluate the DAP by incorporating advanced features like **data enric
 ### Steps and Methodology
 #### Step 4: Data Enriching
 - Enhanced datasets by integrating external data sources through VPC and instances to improve analytics depth.
+
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/ff0362a9-791f-4c2c-a8aa-625d28e98580" />
 
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/83e8fba5-8d9a-4bea-92c8-7f0af4842447" />
@@ -64,6 +68,7 @@ Expand and evaluate the DAP by incorporating advanced features like **data enric
 
 #### Step 5: Data Protection
 - Enforced robust encryption standards using **AWS KMS**.
+
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/5383116b-a93d-4b5b-9847-684fbc3d20c3" />
 
 - Configured IAM roles to control access and secure sensitive datasets.
@@ -71,14 +76,15 @@ Expand and evaluate the DAP by incorporating advanced features like **data enric
 #### Step 6: Data Governance
 - Established data stewardship policies to ensure compliance with city regulations.
 - Built a data catalog using **AWS Glue Data Catalog** for metadata management.
+
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/80bf676b-0f66-4c85-8559-4837dd22f599" />
 
 
 #### Step 7: Data Observability
 - Monitored pipelines to detect anomalies and bottlenecks proactively.
 - Used **AWS CloudWatch** and **AWS X-Ray** for logging and tracing.
-<img width="468" alt="image" src="https://github.com/user-attachments/assets/a2bebff9-e2a6-47ad-a62f-70331bdc49f0" />
 
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/a2bebff9-e2a6-47ad-a62f-70331bdc49f0" />
 
 
 ### AWS Well-Architected Pillars Addressed
@@ -105,13 +111,16 @@ Expand and evaluate the DAP by incorporating advanced features like **data enric
 
 ### Deliverables for Part 2
 - **Data Enrichment Scripts**: Python code for real-time transformations.
+
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/4611c1c0-20ea-433d-9a22-e5ca618429ae" />
 
 - **Governance Framework Documentation**: Comprehensive data policies.
+
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/6b456f5e-c051-47ef-a7d9-c58e131a4538" />
 
 
 - **Performance Metrics Dashboards**: Visualizations for key operational metrics.
+
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/b95122b6-024b-4061-aaf4-b6686f206632" />
 
 ---
@@ -124,4 +133,4 @@ Expand and evaluate the DAP by incorporating advanced features like **data enric
 ---
 
 ## Contact
-For questions or collaboration opportunities, please contact jade.nguyen0796@gmail.com
+For questions or collaboration opportunities, please contact [jade.nguyen0796@gmail.com]
