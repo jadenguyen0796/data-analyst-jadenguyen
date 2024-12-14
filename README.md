@@ -1,93 +1,127 @@
-# data-analyst/solution-artchitect jadenguyen
-# City of Vancouver Data Analytics Project
+# Data Analyst/Solutions Artchitect - #jadenguyen
+# City of Vancouver Data Analytics - Operating Water Permits Project
 
 ## Project Overview
-This repository showcases the **City of Vancouver Data Analytics Platform** project. The initiative focuses on migrating City of Vancouver operations to AWS, specifically designing and implementing a **data analytics platform** to optimize operations related to **Operating Water Permits**.
+This repository documents the **City of Vancouver Data Analytics Platform (DAP)** project. The initiative aimed to migrate City of Vancouver operations to AWS by designing and implementing a scalable, secure, and efficient data analytics platform tailored to support operational needs, specifically related to **Operating Water Permits**.
 
-## Objectives
-- Develop a scalable data analytics platform to handle large datasets related to city operations.
-- Enable descriptive analysis through tasks like **data ingestion**, **profiling**, and **cleaning**.
-- Evaluate project performance using **Operational Excellence** and **Security** frameworks.
+---
 
-## Dataset
-The project utilized anonymized and secure datasets representing:
+## Part 1: Data Analytics Platform Development
+
+### Objectives
+- Build a robust data analytics platform (DAP) to manage and analyze city data effectively.
+- Implement scalable pipelines for **data ingestion**, **profiling**, **cleaning**, and **processing**.
+- Adhere to AWS Well-Architected Framework principles, focusing on Operational Excellence and Security.
+
+### Dataset
+The project used anonymized datasets comprising:
 - Water permit applications and approvals.
-- Historical usage patterns and compliance metrics.
+- Historical data on compliance and usage patterns.
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/71919627-7e36-48cd-84f3-a6441eeb5318" />
 
-## Methodology
-### Data Pipeline Development:
-1. **Data Ingestion**:
-   - Ingested structured and unstructured data into the analytics platform using AWS services.
-   - Tools: AWS S3 for storage, AWS Glue for ETL.
-2. **Data Profiling and Cleaning**:
-   - Addressed missing values and inconsistent formats.
-   - Tools: Python (Pandas, NumPy).
-3. **Pipeline Design**:
-   - Built scalable pipelines with clear workflows for real-time and batch data processing.
-4. **Data Enriching**:
-   - Enhanced datasets by integrating supplementary information for richer analytics.
-   - Tools: AWS Lambda for real-time transformations.
-5. **Data Protection**:
-   - Applied encryption and access controls to ensure secure handling of sensitive data.
-   - Tools: AWS KMS, IAM roles.
-6. **Data Governance**:
-   - Established policies for data stewardship and lifecycle management.
-   - Tools: AWS Glue Data Catalog.
-7. **Data Observability**:
-   - Monitored data pipelines to detect and resolve anomalies proactively.
-   - Tools: AWS CloudWatch, AWS X-Ray.
 
-### Performance Evaluation:
-#### **Operational Excellence**
-- Automated workflows to enhance efficiency.
-- Introduced monitoring systems for resource utilization and pipeline performance.
+### Steps and Methodology
+#### Step 1: Data Ingestion
+- Integrated structured and unstructured data into AWS S3.
+- Used **AWS Glue** for ETL processes, enabling scalable and automated data ingestion workflows.
 
-#### **Security**
-- Applied AWS security best practices, including IAM roles and encryption.
-- Ensured data privacy compliance through logging and access control.
 
-#### **Reliability**
-- Implemented backup and recovery mechanisms to minimize downtime.
-- Used AWS Route 53 for fault-tolerant DNS services.
+#### Step 2: Data Profiling and Cleaning
+- Identified and resolved issues such as missing values and inconsistent data formats.
+- Tools: Python libraries (**Pandas**, **NumPy**) for exploratory and cleaning tasks.
 
-#### **Performance Efficiency**
-- Optimized query times by leveraging AWS Redshift for analytical workloads.
 
-#### **Cost Optimization**
-- Utilized AWS Reserved Instances for predictable workloads.
-- Monitored usage patterns to scale resources dynamically.
+#### Step 3: Pipeline Design
+- Designed end-to-end pipelines for real-time and batch data processing.
+- Leveraged **AWS Lambda** for event-driven workflows.
 
-#### **Sustainability**
-- Adopted serverless technologies to minimize carbon footprint.
-- Optimized data storage tiers for efficient energy use.
+
+### Deliverables for Part 1
+- **Data Pipeline Diagrams**: Detailed flowcharts created using Draw.io to visualize pipeline architecture.
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/76698ba0-29d9-4242-a57b-5a3edc5687d9" />
+
+- **Descriptive Analytics Report**: Summary of dataset transformations and quality improvements.
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/f70c32a1-35b9-429e-94c7-d945a9428202" />
+
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/71d40e3f-7ac0-47aa-b661-f7f4b76b8f11" />
+---
+
+## Part 2: Data Enrichment and Architecture Analysis
+
+### Objectives
+Expand and evaluate the DAP by incorporating advanced features like **data enriching**, **governance**, and **observability** while aligning with additional AWS Well-Architected pillars.
+
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/965f8d1c-9bd8-4d49-b17a-6ad36f5c6f89" />
+
+### Steps and Methodology
+#### Step 4: Data Enriching
+- Enhanced datasets by integrating external data sources through VPC and instances to improve analytics depth.
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/ff0362a9-791f-4c2c-a8aa-625d28e98580" />
+
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/83e8fba5-8d9a-4bea-92c8-7f0af4842447" />
+
+- Implemented real-time data transformation using **AWS Lambda**.
+
+#### Step 5: Data Protection
+- Enforced robust encryption standards using **AWS KMS**.
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/5383116b-a93d-4b5b-9847-684fbc3d20c3" />
+
+- Configured IAM roles to control access and secure sensitive datasets.
+
+#### Step 6: Data Governance
+- Established data stewardship policies to ensure compliance with city regulations.
+- Built a data catalog using **AWS Glue Data Catalog** for metadata management.
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/80bf676b-0f66-4c85-8559-4837dd22f599" />
+
+
+#### Step 7: Data Observability
+- Monitored pipelines to detect anomalies and bottlenecks proactively.
+- Used **AWS CloudWatch** and **AWS X-Ray** for logging and tracing.
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/a2bebff9-e2a6-47ad-a62f-70331bdc49f0" />
+
+
+
+### AWS Well-Architected Pillars Addressed
+#### Operational Excellence
+- Automated operational workflows to improve consistency and reduce manual intervention.
+- Established metrics and alerts for system health.
+
+#### Security
+- Implemented fine-grained IAM policies and end-to-end encryption.
+- Ensured auditability through comprehensive logging.
+
+#### Reliability
+- Designed fault-tolerant pipelines with backup and recovery mechanisms.
+- Used **AWS Route 53** for failover and DNS services.
+
+#### Performance Efficiency
+- Optimized data query speeds using **AWS Redshift** for analytical workloads.
+
+#### Cost Optimization
+- Right-sized resources using AWS Cost Explorer and implemented Reserved Instances.
+
+#### Sustainability
+- Adopted serverless architectures to minimize energy usage and environmental impact.
+
+### Deliverables for Part 2
+- **Data Enrichment Scripts**: Python code for real-time transformations.
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/4611c1c0-20ea-433d-9a22-e5ca618429ae" />
+
+- **Governance Framework Documentation**: Comprehensive data policies.
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/6b456f5e-c051-47ef-a7d9-c58e131a4538" />
+
+
+- **Performance Metrics Dashboards**: Visualizations for key operational metrics.
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/b95122b6-024b-4061-aaf4-b6686f206632" />
+
+---
 
 ## Tools and Technologies
-- **Cloud Services**: AWS S3, AWS Glue, AWS Lambda, AWS KMS, AWS Redshift, AWS CloudWatch.
+- **Cloud Services**: AWS S3, AWS Glue, AWS Lambda, AWS KMS, AWS Redshift, AWS CloudWatch, AWS X-Ray.
 - **Programming**: Python (Pandas, NumPy, Matplotlib).
-- **Visualization**: Draw.io for data flow diagrams.
+- **Visualization**: Draw.io for data flow and architecture diagrams.
 
-## Deliverables
-- **Pipeline Visualizations**: Comprehensive diagrams illustrating the architecture.
-- **Descriptive Analytics Report**: Detailed analysis of ingested and cleaned datasets.
-- **Performance Evaluation Report**: Insights on operational efficiency and security measures.
-
-## Key Visualizations
-Include links or embedded images for:
-- Data pipeline architecture.
-- Sample data profiling output.
-- Operational metrics dashboards.
-
-## How to Use
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/city-of-vancouver-project.git
-   ```
-2. Navigate to the relevant sections for:
-   - Scripts (`/scripts`): Contains Python code for ingestion and cleaning.
-   - Documentation (`/docs`): Includes visualizations and reports.
-
-## License
-[MIT License](LICENSE)
+---
 
 ## Contact
-For questions or collaboration opportunities, please reach out at [your-email@example.com].
+For questions or collaboration opportunities, please contact jade.nguyen0796@gmail.com
